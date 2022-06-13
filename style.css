@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    background-image: linear-gradient(rgba(4,9,30, 0.7),rgba(4,9,30, 0.3)), url(images/banner.png);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    box-sizing: border-box;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.logo img{
+    width: 150px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0 10px;
+}
+nav ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: brown;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+nav ul li:hover::after{
+    width: 80%;
+}
+.header .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    width: 90%;
+}
+.header .text h1{
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+.header .text p{
+    font-size: 15px;
+    font-weight: 250;
+}
+.header .text a{
+    padding: 7px 15px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    background: transparent;
+    transition: 1s;
+    position: relative;
+}
+.header .text a:hover{
+    background: brown;
+    border: 1px solid brown;
+}
+.menu .icon{
+    display: none;
+}
+
+
+
+
+/*== courses==*/
+
+.course{
+     padding-top: 70px;
+     display: block;
+     text-align: center;
+}
+.course h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+.course p{
+    color: rgb(161, 156, 150);
+    font-size: 12px;
+    font-weight: normal;
+}
+.course .course-item{
+    background-color: bisque;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.course h3{
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+/*== college campus == */
+
+
+.college-campus{
+    padding-top: 70px;
+    display: block;
+    text-align: center;
+}
+.college-campus h2{
+   font-size: 30px;
+   font-weight: 500;
+}
+.college-campus p{
+   color: rgb(161, 156, 150);
+   font-size: 12px;
+   font-weight: normal;
+}
+.campus-item{
+    margin: 0 20px;
+    height: 400px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.campus-item img{
+    min-width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    margin: auto;
+}
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+.layer:hover{
+    background: rgba(243, 0, 0, .6);
+}
+.layer h2{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 500;
+    transition: .5s;
+    cursor: pointer;
+    font-size: 18px;
+    opacity: 0;
+}
+
+.layer:hover h2{
+    bottom: 49%;
+    opacity: 1;
+}
+
+
+@media (max-width: 700px)  {
+    nav ul{
+        display: block;
+    }
+    .header .text h1{
+        font-size: 20px;
+    }
+    .nav-links{
+        background: #be0303;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 200px;
+        right: -300px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    
+.menu .icon{
+    display: block;
+    font-size: 22px;
+    cursor: pointer;
+    color: #ffffff;
+}
+.close{
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.nav-links ul{
+    padding: 30px;
+}
+nav ul a{
+    margin: 10px;
+    display: block;
+}
+.header{
+    padding: 20px;
+}
+
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Biggest Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,200;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+        <div class="menu">
+        <div class="logo">
+            <a href=""><img src="images/logo.png" alt="World Biggest site logo"></a>
+        </div>
+        <nav class="nav-links" id="nav-links">
+            <i onclick="hideMenu()" class="fa-solid fa-xmark close icon"></i>
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">course</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+            
+        </nav>
+        <i onclick="showMenu()" class="fa-solid fa-bars icon"></i>
+        </div>
+        <div class="text">
+            <h1>World Biggest Website</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur asapiente nemo incidunt quo non fugiat, dolorem asperiores  fuga rem ea. Soluta, error! <br>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+            <a href="">visit us to know more</a>
+        </div>
+    </div>
+    </header>
+
+
+
+    <section class="course">
+        <div class="container">
+            <h2>Curses we offer</h2>
+            <p>Lorem ipsum dolor sit amet reprehenderit vel culpa.</p>
+            <div class="row">
+                <div class="col  course-item">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam minima dolore illum nesciunt, reprehenderit vel culpa perspiciatis veritatis voluptatum nihil.</p>
+                </div>
+                <div class="col  course-item">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam minima dolore illum nesciunt, reprehenderit vel culpa perspiciatis veritatis voluptatum nihil.</p>
+                </div>
+                <div class=" col  course-item">
+                <h3>Post Graduate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam minima dolore illum nesciunt, reprehenderit vel culpa perspiciatis veritatis voluptatum nihil.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="college-campus">
+        <div class="container">
+            <h2>Our College Campus</h2>
+            <p>Lorem ipsum dolor amet consectetur sit amet reprehenderit vel culpa.</p>
+        <div class="row">
+            <div class="col campus-item">
+                <img src="images/london.png" alt="">
+                <div class="layer">
+                    <h2>London</h2>
+                </div>
+            </div>
+            <div class="col campus-item">
+                <img src="images/newyork.png" alt="">
+                <div class="layer">
+                    <h2>New Yourk</h2>
+                </div>
+            </div>
+            <div class="col campus-item">
+                <img src="images/washington.png" alt="">
+                <div class="layer">
+                    <h2>washington</h2>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        var nav_links = document.getElementById('nav-links')
+
+       function hideMenu(){
+            nav_links.style.right = '-300px'
+       }
+       function showMenu(){
+            nav_links.style.right='0';
+       }
+
+    </script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
